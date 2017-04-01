@@ -1,1 +1,13 @@
 <h1> Dummy Instagram</h1>
+<% @posts.each do |post| %>
+    <div class="media">
+
+         <div class="media-body">
+               <h4 class="media-heading">  </h4>
+            <p><%= post.content %></p>
+            <p><%= image_tag post.image.url %></p>
+
+        </div>
+
+   </div>
+    <% end %>

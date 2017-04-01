@@ -33,9 +33,19 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-#Using HAML as the front end framework
-gem 'haml', '~> 4.0.5'
+# #Using HAML as the front end framework
+# gem 'haml', '~> 4.0.5'
 
+# For the database compatibility with postgress
+#DATABASE
+gem "pg"
+
+gem 'carrierwave', '~> 0.10.0'
+gem 'mini_magick', '~> 4.3'
+
+
+#Styling the front end with good design
+gem 'bootstrap-sass', '~> 3.3.5'
 
 
 group :development, :test do
