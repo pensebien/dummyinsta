@@ -44,7 +44,8 @@ gem 'mini_magick', '~> 4.3'
 
 
 #Styling the front end with good design
-gem 'bootstrap', '~> 4.0.0.alpha6'
+#gem to handle bootstrap integration
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', github: "rails/sass-rails"

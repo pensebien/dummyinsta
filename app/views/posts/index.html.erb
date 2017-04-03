@@ -1,13 +1,24 @@
-<h1> Dummy Instagram</h1>
+<div class="posts-wrapper row">
 <% @posts.each do |post| %>
-    <div class="media">
 
-         <div class="media-body">
-               <h4 class="media-heading">  </h4>
-            <p><%= post.content %></p>
-            <p><%= image_tag post.image.url %></p>
+            <div class="post">
+                <div class="post-head">
+                    <div class="name">
+                        Emmanuel Awokoya
 
-        </div>
+                    </div>
+                </div>
+                <div class="image center-block">
 
-   </div>
+                            <%= link_to (image_tag post.image.url(:medium), class:'img-responsive'), post_path(post) %></p>
+
+                </div>
+                <div class="caption">
+                 <p ><%= post.content %></p>
+                </div>
+            </div>
+
+
     <% end %>
+</div>
+
