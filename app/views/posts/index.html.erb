@@ -14,10 +14,13 @@
 
                 </div>
                 <div class="caption">
-                 <p ><%= post.content %></p>
+                 <p ><%= link_to post.content, post_path(post)%></p>
                 </div>
-            </div>
 
+             <div class="text-right">
+                  <%= link_to  "Edit Post", edit_post_path(post)  %>
+            </div>
+            </div>
 
     <% end %>
 </div>

@@ -1,6 +1,4 @@
 <div class="posts-wrapper row">
-
-
             <div class="post">
                 <div class="post-head">
                     <div class="name">
@@ -10,15 +8,16 @@
                 </div>
                 <div class="image center-block">
 
-                            <%= link_to (image_tag @post.image.url(:medium), class:'img-responsive')%>
+                            <%= image_tag(@post.image.url(:medium), class:'img-responsive') %>
 
                 </div>
                 <div class="caption">
-                 <p ><%= @post.content %></p>
+                 <p ><%=@post.content%></p>
                 </div>
 
-                <%=link_to "Cancel", posts_path%>
+                <div class="text-center edit-links">
+                  <%= link_to  "Back", posts_path  %>
+                  <%= link_to  "Edit Post", edit_post_path(@post)  %>
+                </div>
             </div>
-
 </div>
-
