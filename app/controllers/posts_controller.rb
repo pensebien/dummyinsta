@@ -11,9 +11,9 @@ class PostsController < ApplicationController
 
             end
 
-            def show
+            # def show
 
-            end
+            # end
 
              def create
                 if @post = Post.create(post_params)
@@ -46,11 +46,11 @@ class PostsController < ApplicationController
 
 
 
-            def destroy
-                @post.destroy
+            # def destroy
+            #     @post.destroy
 
-                redirect_to root_path
-            end
+            #     redirect_to root_path
+            # end
 
 
 
