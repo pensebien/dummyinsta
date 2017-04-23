@@ -50,7 +50,12 @@ gem 'jquery-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', github: "rails/sass-rails"
 
+#Creating dummy data
+gem "factory_girl_rails", "~> 4.0"
 
+
+
+gem "twilio-ruby"
 
 
 group :development, :test do
