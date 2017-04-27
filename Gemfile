@@ -55,6 +55,9 @@ gem "factory_girl_rails", "~> 4.0"
 
 
 
+#Use for the installation of User
+gem 'devise'
+
 gem "twilio-ruby"
 
 
